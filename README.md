@@ -19,7 +19,7 @@ data=pd.read_csv('data_all.csv')
 y=data['status']
 X=data.drop(['status'],axis=1)
 print('the size of X,y:',X.shape,y.shape)
-'''
+```
 ### 3.划分训练集和测试集
 将训练集与测试集7-3分
 ```python
