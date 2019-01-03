@@ -38,10 +38,10 @@ for name,model in models:
 ```
 最终模型结果如下：
 
-        模型名称       |  accuracy_score  |         AUC
-----------------------|------------------|------------------
-  LogisticRegression  |0.7484232655921513|0.5
-          SVM         |0.7484232655921513|0.5
+模型名称|accuracy_score|AUC
+----|-----|----
+LogisticRegression|0.7484232655921513|0.5
+SVM|0.7484232655921513|0.5
 DecisionTreeClassifier|0.6846531184302733|0.5942367479369453
 
 ## 参考文档
