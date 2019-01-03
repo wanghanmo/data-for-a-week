@@ -27,7 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 (''')
 ### 4.模型构建及评估
 分别构建逻辑回归、SVM、和决策树模型，并对三个模型进行评分，评分标准为sklearn.metrics里的Accuracy_score和AUC两个评价指标。
-''' python
+'''python
 models=[('LogisticRegression',LogisticRegression(random_state=2018)),('SVM',SVC(gamma='auto',random_state=2018)),('DecisionTreeClassifier',DecisionTreeClassifier(random_state=2018))]
 for name,model in models:
     model.fit(X_train,y_train)
@@ -37,10 +37,10 @@ for name,model in models:
     print(name,'测试集正确率,AUC_score：',acc,model_auc)
 '''
 最终模型结果如下：
-模型名称|accuracy_score|AUC
---|:--:|---:
-LogisticRegression|0.7484232655921513|0.5
-SVM|0.7484232655921513|0.5
+        模型名称       |  accuracy_score  |         AUC
+----------------------|:----------------:|------------------:
+  LogisticRegression  |0.7484232655921513|0.5
+          SVM         |0.7484232655921513|0.5
 DecisionTreeClassifier|0.6846531184302733|0.5942367479369453
 ## 参考文档
 sklearn官方英文文档：https://scikit-learn.org/stable/index.html
