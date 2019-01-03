@@ -19,4 +19,4 @@ for name,model in models:
     acc=accuracy_score(y_test,model.predict(X_test))
     fpr, tpr, thresholds = roc_curve(y_test,model.predict(X_test))
     model_auc=auc(fpr,tpr)
-    print(name,'测试集正确率,f1_score：',acc,model_auc)
+    print(name,'测试集正确率,AUC：',acc,model_auc)
