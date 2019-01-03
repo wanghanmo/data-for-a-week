@@ -1,7 +1,7 @@
 # data-for-a-week
 ## 数据集说明
-这是我们本次实践数据的[下载地址](https://pan.baidu.com/s/1dtHJiV6zMbf_fWPi-dZ95g)
-说明：这份数据集是金融数据（非原始数据，已经处理过了），我们要做的是预测贷款用户是否会逾期。表格中 "status" 是结果标签：0表示未逾期，1表示逾期。
+- 这是我们本次实践数据的[下载地址](https://pan.baidu.com/s/1dtHJiV6zMbf_fWPi-dZ95g)
+- 说明：这份数据集是金融数据（非原始数据，已经处理过了），我们要做的是预测贷款用户是否会逾期。表格中 "status" 是结果标签：0表示未逾期，1表示逾期。
 ## 模型构建
 ### 1.首先是导入需要用到的库
 ```python
@@ -37,11 +37,13 @@ for name,model in models:
     print(name,'测试集正确率,AUC_score：',acc,model_auc)
 ```
 最终模型结果如下：
+
         模型名称       |  accuracy_score  |         AUC
 ----------------------|------------------|------------------
   LogisticRegression  |0.7484232655921513|0.5
           SVM         |0.7484232655921513|0.5
 DecisionTreeClassifier|0.6846531184302733|0.5942367479369453
+
 ## 参考文档
 - sklearn官方英文文档：https://scikit-learn.org/stable/index.html
 - sklearn中文版文档：http://sklearn.apachecn.org/#/
